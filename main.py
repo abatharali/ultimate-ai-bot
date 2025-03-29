@@ -401,7 +401,7 @@ def run_bot():
 if __name__ == '__main__':
     if os.getenv("RENDER"):
         threading.Thread(target=run_bot).start()
-        app.run(host="0.0.0.0", port=int(os.getenv("PORT", 10000)))
+        app.run(host="0.0.0.0", port=int(os.getenv("PORT", 80)))
     else:
         print("🚀 Starting Ultimate AI Mastermind Bot in polling mode...")
         bot.infinity_polling()
