@@ -1,0 +1,7 @@
+envVars:
+  - key: TELEGRAM_BOT_TOKEN
+    fromGroup: telegram-secrets
+  - key: MONGO_URI
+    fromGroup: db-secrets
+  - key: OPENAI_API_KEY
+    fromGroup: api-keys
